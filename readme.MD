@@ -6,6 +6,6 @@ This is a set of procedure to enhance security of a server against attach , it d
 
 # **STEPS**
 - uncommented line with **port** in /etc/ssh/ssh_config, set value 43951 and run **sudo systemctl restart sshd.service**
-- Copy security folder in **/etc/security**
-- Enter in **/etc/security** folder
+- Copy security folder in **/etc/init.d/security**. In security directory **cp -R ../security/ /etc/init.d/security/**
+- Enter in **/etc/init.d/security** folder **mkdir /etc/init.d/security/**
 - RUN **run.sh** in sudo mode : sudo chmod u+x run.sh && sudo ./run.sh
