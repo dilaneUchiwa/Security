@@ -8,7 +8,7 @@ User=root
 Type=oneshot
 RemainAfterExit=yes
 ExecStart=/etc/init.d/security/start.sh start
-ExecStop=/etc/init.d/security/stoplib-systemd-system/.sh stop
+ExecStop=/etc/init.d/security/lib-systemd-system/stop.sh stop
  
 [Install]
 WantedBy=multi-user.target
