@@ -7,8 +7,8 @@ After=network-online.target
 User=root
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/etc/init.d/nom_de_votre_script_iptables(modifier_le_nom!) start
-ExecStop=/etc/init.d/nom_de_votre_script_iptables(modifier_le_nom!) stop
+ExecStart=/etc/init.d/security/start.sh start
+ExecStop=/etc/init.d/security/stoplib-systemd-system/.sh stop
  
 [Install]
 WantedBy=multi-user.target
